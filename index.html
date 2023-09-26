@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Griffin Head</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>   
+   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">Home</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">RESUME</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACT</a>
+      </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+                <!--SCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+          <a class="icon-link w3-text-sand w3-hover-text-amber fa fa-github" style="font-size:28px" href="https://github.com/griffinhead9" target="_blank">
+              
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.linkedin.com/in/griffin-head-22a1381b8" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+          <a href="./resume.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="Resume-Griffin-Head.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">DOWNLOAD Resume</span>
+          </a>
+        </div>
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">Home</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUME</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <h1>Griffin Head</h2>
+            <h2>Solutions Architect</h3>
+            <div class="counter-number"></div>
+          </div>
+          
+          <!--ABOUT SECTION-->
+          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h2>
+            <p class="w3-margin-top-2"> 
+              I am currently a Solutions Architect for c1Advantage with a contract to Synchrony Financial.
+            </p>
+            <p class=""> 
+              As a Solutions Architect, I bring nearly 2 years of expertise in leveraging vRealize Automate to design and
+              deploy over 300 virtual servers in 2023
+            </p>
+            <p class=""> 
+              I served as the primary point of contact between cross-functional teams, facilitating seamless communication and
+              collaboration, while proactively identifying and resolving compliance defects in Chef-managed servers
+            </p>
+            <p class=""> 
+              I utilized Agile methodology to efficiently manage and complete user Stories within Jira, while employing a
+              Kanban board to visualize workflow and track progress
+            </p>
+          </div>
+
+          <!--RESUME-->
+          <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+              <!--EMPLOYMENT HISTORY SECTION-->
+              <h3 class="w3-border-amber">MY EMPLOYMENT HISTORY</h3>
+              <h2 class="w3-border-bottom w3-border-amber"></h2>
+              <div class="">
+                <h4>Solutions Architect at c1Advantage with a contract at Synchrony</h4>
+                <p>February 2022 - Present</p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Contributed to the successful deployment of on-premises private cloud architecture solutions</li>
+                  <li>Designed and developed customized reports within ServiceNow to efficiently manage my ticket queue
+                      and monitor action items related to the new server infrastructure request queue.</li>
+                  <li>Collaborated with application teams to assess and establish optimal network placement for their
+                      servers</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Technical Support Engineer at c1Secure with a contract at Zoom for Government </h4>
+                <p>June 2021 - March 2022 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Provided technical support to Zoom for Government users by promptly addressing their inquiries and
+                      concerns via phone calls and tickets in ServiceNow</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Web Developer at Southern Illinois University</h4>
+                <p>October 2019 - May 2021 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Led the successful migration of the housing department's website from Ruby on Rails version 4 to 5,
+                      utilizing GitHub for efficient version control, code management, and seamless updates</li>
+                  <li>Provided technical support for student employees in the housing department</li>
+                </ul>
+              </div>
+            </div>
+
+            <!---EDUCATION SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY EDUCATION</h3>
+              <h2 class="w3-border-bottom w3-border-amber"></h2>
+                <h4>Bachelor of Science in Information Systems Technologies from Southern Illinois University</h4>
+                <p>August 2017 - May 2021 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>As an active member of the Security Dawgs, SIU's cybersecurity competition club, I competed in the
+                      National Cyber League (NCL) and achieved remarkable results, placing in the top 23% overall and
+                      ranking in the top 6% within my bracket</li>
+                  <li>Completed a senior project involving the installation of ESXi on a physical server, creation of an
+                      enterprise-grade network architecture, and deployment of ten virtual machines replicating the network
+                      topology of the 2019 Midwest Region Collegiate Cyber Defense Competition (CCDC) and configured
+                      Splunk forwarders on all ten of the machines</li>
+                </ul>
+            </div>
+
+            <!--SKILLS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY SKILLS</h3>
+              <h2 class="w3-border-bottom w3-border-amber"></h2>
+              <!--SOFT SKILLS-->
+              <h4>Soft skills</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>I have excellent communication skills, experience documenting processes, and workin with 
+                  several teams at the same time</li>
+                <li>I have a talent for investigating and researching different processes to offer different improvements and solution for the benefit of the organization </li>
+              </ul>
+              <!--TECHNICAL SKILLS-->
+              <h4>Technical skills</h4>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>I have a professional experience with the following: <br>
+                  vRealize Automation <br>
+                  ServiceNow <br>
+                  Linux <br></li>
+                  <li>I am a Splunk Core Certified User <br>
+                      <a href="https://www.credly.com/badges/20370c49-f84c-4902-95c7-436c682a7419">Verify Here</a>
+                      </li>
+                  <li>I am currently working on getting my AWS Cloud Practitioner Certification</li>
+                </ul>
+            </div>
+
+            <!--INTERESTS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY HOBBIES AND INTERESTS</h3>
+              <h2 class="w3-border-bottom w3-border-amber"></h2>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>I enjoy cross stitching, embroidery, and reading in my free time</li>
+                </ul>
+            </div>
+
+          <!--CONTACT SECTION-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT DETAILS</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>Name: Griffin Head</p>
+              <p>Location: Saint Louis, Missouri</p>
+              <p>Phone number: 3312033198</p>
+              <p>E-mail: griffinhead99@gmail.com</p>
+            </div>
+          </div>
+
+        <!--FOOTER-->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2023 - Griffin Head</p>
+        <!-- End footer -->
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>
